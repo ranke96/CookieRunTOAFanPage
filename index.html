@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>賓果模擬器</h1>
+    </header>
+    <div class="container">
+        <div class="grid">
+            <!-- Bingo grid cells will be generated here by JavaScript -->
+        </div>
+        <div class="status">
+            <p>剩餘機會: <span id="remaining">8</span></p>
+            <p>目前連線數: <span id="completed-lines">0</span></p>
+            <p>已消耗鑰匙: <span id="total-games">0</span></p>
+        </div>
+        <button id="reset">重置</button>
+        <h2>回合紀錄</h2>
+        <ul id="history">
+            <!-- Game history will be shown here -->
+        </ul>
+    </div>
+    <footer>
+        <p>本次活動總共可以免費取得184隻鑰匙(如果我沒算錯)</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

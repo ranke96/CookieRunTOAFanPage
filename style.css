@@ -1,0 +1,78 @@
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    background-image: url('https://www.taiwanhot.net/cache/1162238/lgnw/medias-20240626-667bb565a095b.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.3); /* Adjusted background opacity */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.container {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    grid-gap: 5px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cell.active {
+    background-color: #87CEFA; /* Sky blue color for active cells */
+}
+
+.status {
+    margin: 20px 0;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#history {
+    max-height: 150px; /* Set height for approximately 5 rows */
+    overflow-y: auto;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#history li {
+    padding: 5px;
+    /* No border to remove lines between items */
+}
