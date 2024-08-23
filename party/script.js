@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
         clothesPreview.textContent = `增益: ${clothesBonus}% | 減益: ${clothesPenalty}%`;
 
         // Update final result
-        document.getElementById('result').textContent = `增益: ${totalBonus + clothesBonus + pantsBonus}% | 減益: ${totalPenalty + clothesPenalty}%`;
+        document.getElementById('result').textContent = `增益: ${totalBonus + clothesBonus + pantsBonus}% | 減益: ${totalPenalty + clothesPenalty + pantsPenalty}%`;
     }
 
     function resetAll() {
