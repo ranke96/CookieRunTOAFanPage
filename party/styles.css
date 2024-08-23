@@ -1,0 +1,56 @@
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Hide overflow */
+            width: 100%;
+            height: 100%;
+        }
+
+.calculator {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+.equipment-selection {
+    margin-bottom: 20px;
+}
+
+.equipment {
+    margin-bottom: 15px;
+}
+
+.stars {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.star-selector {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.star-selector.inactive {
+    color: lightgray;
+}
+
+#reset-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#reset-button:hover {
+    background-color: #0056b3;
+}

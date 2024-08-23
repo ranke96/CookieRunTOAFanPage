@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>戰力計算器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+
+        <div class="character-selection">
+            <label for="character">選擇角色:</label>
+            <select id="character">
+                <option value="none">請選擇</option>
+                <option value="rockstar">搖滾巨星餅乾</option>
+                <option value="blackberry">黑莓餅乾</option>
+                <option value="generic">任意屬性標記餅乾</option>
+            </select>
+        </div>
+
+        <div class="equipment-selection">
+            <div class="equipment">
+                <label for="weapon">選擇武器:</label>
+                <select id="weapon">
+                    <option value="none">請選擇</option>
+                    <option value="rock_guitar">搖滾電吉他</option>
+                    <option value="blackberry_candle">陰森的黑莓蠟燭</option>
+                </select>
+                <div class="stars" id="weapon-stars">
+                    <span class="star-selector" data-type="weapon" data-star="1">★</span>
+                    <span class="star-selector inactive" data-type="weapon" data-star="2">★</span>
+                    <span class="star-selector inactive" data-type="weapon" data-star="3">★</span>
+                    <span class="star-selector inactive" data-type="weapon" data-star="4">★</span>
+                    <span class="star-selector inactive" data-type="weapon" data-star="5">★</span>
+                </div>
+                <div id="weapon-preview">增益: 0% | 減益: 0%</div>
+            </div>
+
+            <div class="equipment">
+                <label for="helmet">選擇頭盔:</label>
+                <select id="helmet">
+                    <option value="none">請選擇</option>
+                    <option value="party_hat">派對主角帽</option>
+                    <option value="ghost_pirate_hat">傳說幽靈海盜帽/璀璨流星雨帽</option>
+                </select>
+                <div class="stars" id="helmet-stars">
+                    <span class="star-selector" data-type="helmet" data-star="1">★</span>
+                    <span class="star-selector inactive" data-type="helmet" data-star="2">★</span>
+                    <span class="star-selector inactive" data-type="helmet" data-star="3">★</span>
+                    <span class="star-selector inactive" data-type="helmet" data-star="4">★</span>
+                    <span class="star-selector inactive" data-type="helmet" data-star="5">★</span>
+                </div>
+                <div id="helmet-preview">增益: 0% | 減益: 0%</div>
+            </div>
+
+            <div class="equipment">
+                <label for="clothes">選擇衣服:</label>
+                <select id="clothes">
+                    <option value="none">請選擇</option>
+                    <option value="epic_clothes">任意史詩服裝</option>
+                </select>
+                <div>
+                    <label for="clothes_potential_1">潛能1:</label>
+                    <select id="clothes_potential_1">
+                        <option value="none">請選擇</option>
+                        <option value="bonus">增益</option>
+                        <option value="penalty">減益</option>
+                    </select>
+                    <input type="number" id="clothes_potential_1_value" placeholder="數值">
+                </div>
+                <div>
+                    <label for="clothes_potential_2">潛能2:</label>
+                    <select id="clothes_potential_2">
+                        <option value="none">請選擇</option>
+                        <option value="bonus">增益</option>
+                        <option value="penalty">減益</option>
+                    </select>
+                    <input type="number" id="clothes_potential_2_value" placeholder="數值">
+                </div>
+                <div id="clothes-preview">增益: 0% | 減益: 0%</div>
+            </div>
+
+            <div class="equipment">
+                <label for="pants">選擇褲子:</label>
+                <select id="pants">
+                    <option value="none">請選擇</option>
+                    <option value="trumpet_pants">樂隊喇叭褲</option>
+                    <option value="ghost_pirate_pants">傳說幽靈海盜褲/璀璨流星雨裙</option>
+                </select>
+                <div class="stars" id="pants-stars">
+                    <span class="star-selector" data-type="pants" data-star="1">★</span>
+                    <span class="star-selector inactive" data-type="pants" data-star="2">★</span>
+                    <span class="star-selector inactive" data-type="pants" data-star="3">★</span>
+                    <span class="star-selector inactive" data-type="pants" data-star="4">★</span>
+                    <span class="star-selector inactive" data-type="pants" data-star="5">★</span>
+                </div>
+                <div>
+                    <label for="pants_potential_1">潛能1:</label>
+                    <select id="pants_potential_1">
+                        <option value="none">請選擇</option>
+                        <option value="bonus">增益</option>
+                        <option value="penalty">減益</option>
+                    </select>
+                    <input type="number" id="pants_potential_1_value" placeholder="數值">
+                </div>
+                <div>
+                    <label for="pants_potential_2">潛能2:</label>
+                    <select id="pants_potential_2">
+                        <option value="none">請選擇</option>
+                        <option value="bonus">增益</option>
+                        <option value="penalty">減益</option>
+                    </select>
+                    <input type="number" id="pants_potential_2_value" placeholder="數值">
+                </div>
+                <div id="pants-preview">增益: 0% | 減益: 0%</div>
+            </div>
+        </div>
+
+        <div class="result">
+            <h3>總結算:</h3>
+            <p id="result">增益: 0% | 減益: 0%</p>
+        </div>
+
+        <button id="reset-button">重設</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
